@@ -27,6 +27,8 @@ class Solution(object):
             if nums[i] != val:
                 nums[k] = nums[i]  # moving valid element forward
                 k+=1
+        # delete all elements after kth element       
+        del nums[k:]        
         return k
 
 obj1=Solution()
