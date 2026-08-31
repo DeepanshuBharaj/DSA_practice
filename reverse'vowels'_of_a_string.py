@@ -1,0 +1,23 @@
+class Solution:
+    def rev_vowels(self, s: str) -> str:
+        vowels = 'aeiouAEIOU'
+        chars = list(s)
+        left = 0
+        right = len(chars) - 1
+
+        while left < right:
+            if chars[left] not in vowels:
+                left += 1
+            elif chars[right] not in vowels:
+                right -= 1
+            else:
+                chars[left], chars[right] = chars[right], chars[left]
+                left += 1
+                right -= 1
+
+        return "".join(chars)
+
+
+obj1 = Solution()
+s = input("enter a string containing vowels")
+print(obj1.rev_vowels(s))            
