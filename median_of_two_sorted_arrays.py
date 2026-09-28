@@ -3,7 +3,7 @@ class Solution:
         # merge arrays
         new_array = []
         i=0
-        while i<len(nums1) or i<len(nums2):
+        while i<len(nums1) or i<len(nums2): 
             if i<len(nums1):
                 new_array.append(nums1[i])
             if i<len(nums2):
