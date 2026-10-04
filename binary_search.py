@@ -45,3 +45,5 @@ class Solution(object):
 ob=Solution()
 nums = [1,2,9,63,64,78,90,273]
 print(ob.search(nums,273))               
+
+# finish
